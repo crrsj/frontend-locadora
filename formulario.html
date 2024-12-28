@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Alugar veículo</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite nome do cliente" required>      
+          <label for="cpf">Cpf:</label>
+          <input type="text" id="cpf" name="cpf" placeholder="Digite o cpf" required>
+          <label for="telefone">Telefone:</label>
+          <input type="text" id="telefone" name="telefone" placeholder="Digite o telefone do cliente" required>
+          <label for="marca">Marca:</label>
+          <select id="marca" name="marca" required>
+            <option value="" disabled selected>Selecione a marca do veículo</option>
+            <option value="HONDA">Honda</option>
+            <option value="TOYOTA">Toyota</option>
+            <option value="CHEVROLET">Chevrolet</option>
+            <option value="NISSAN">Nissan</option>
+            <option value="FIAT">Fiat</option>
+            <option value="RENAULT">Renault</option>
+            <option value="KIA">Kia</option>
+            <option value="CHERRY">Cherry</option>
+            <option value="FORD">Ford</option>
+          </select>
+          <label for="modelo">Modelo:</label>
+          <select id="modelo" name="modelo" required>
+            <option value="" disabled selected>Selecione o modelo do veículo</option>
+            <option value="CIVIC">Civic</option>
+            <option value="COROLLA">Corolla</option>
+            <option value="HILUX">Hilux</option>
+            <option value="ETIOS">Etios</option>
+            <option value="HRV">Hrv</option>
+            <option value="FRONTIER">Kicks</option>
+            <option value="KWID">Kwid</option>
+            <option value="CERATO">Cerato</option>
+            <option value="PRISMA">Prisma</option>
+            <option value="PALIO">Palio</option>
+            <option value="TORO">Toro</option>
+          </select>
+          <label for="placa">Placa:</label>
+          <input type="text" id="placa" name="placa" placeholder="Digite a placa do veículo" required>
+          <label for="dataRetirada">Data de retirada:</label>
+          <input type="text" id="dataRetirada" name="dataRetirada" placeholder="Digite a data de retirada" required>
+          <label for="dataEntrega">Data de entrega:</label>
+          <input type="text" id="dataEntrega" name="dataEntrega" placeholder="Digite a data de entrega" required>
+          <label for="dias">Dias:</label>
+          <input type="number" id="dias" name="dias" placeholder="Digite os dias a ser alugado" required>
+          <label for="diaria">Diária:</label>
+          <input type="number" id="diaria" name="diaria" placeholder="Digite o  valor da diária" required>        
+      
+         
+          <button type="button" onclick="validarFormulario()">Enviar</button>
+        </form>
+      </div>
+      
+</body>
+<script src="./script.js"></script>
+</html>
